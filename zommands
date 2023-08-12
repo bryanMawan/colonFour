@@ -1,0 +1,19 @@
+django-admin startproject projectname
+python manage.py runserver
+python manage.py startapp appname
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py collectstatic
+python manage.py shell
+python manage.py test appname
+python manage.py runserver port_number
+python manage.py shell_plus
+python manage.py dbshell
+python manage.py flush
+python manage.py dumpdata appname
+python manage.py loaddata filename
+python manage.py createsuperuser
+python manage.py shell_plus
+python manage.py check
+python manage.py help

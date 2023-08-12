@@ -32,7 +32,7 @@ ALLOWED_HOSTS = [".vercel.app", "127.0.0.1", '.now.sh']
 # Application definition
 
 INSTALLED_APPS = [
-    'colonFourApp'
+    'colonFourApp',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -80,9 +80,9 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "railway",
         "USER": "postgres",
-        "PASSWORD": "A4NHMYyxRAdgZMusmzmy",
-        "HOST": "containers-us-west-133.railway.app",
-        "PORT": "7117",
+        "PASSWORD": "b7pBCN6rbRay2kygGH1H",
+        "HOST": "containers-us-west-95.railway.app",
+        "PORT": "7293",
 
     }
 }
