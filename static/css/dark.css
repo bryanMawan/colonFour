@@ -1,0 +1,27 @@
+body {
+  background-color: #1e1e1e;
+  color: #dcdcdc; /* Set text color to white for better visibility */
+}
+
+
+/* Style for the centered image */
+.centered-image {
+  max-width: 200px;
+}
+
+/* Style for the search box and button */
+.search-box {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+}
+
+.search-button {
+  background-color: #1e1e1e;
+  border: 1px solid #dcdcdc; /* Add border style */
+  transition: background-color 0.3s, border-color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.search-button:hover {
+  background-color: #0e0e0e;
+  border: 1px solid #dcdcdc; /* Change border color on hover */
+}

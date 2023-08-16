@@ -9,10 +9,18 @@
   <title>{% block title %}Colon Four{% endblock %}</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/dark.css' %}">
 </head>
 
-<body> yes
-
+<body>
+  <main class="container text-center">
+    {% block content %}
+    {% endblock %}
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 colonFour</p>
+  </footer>
 </body>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
