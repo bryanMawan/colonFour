@@ -1,6 +1,14 @@
+@font-face {
+  font-family: myfont;
+  src: url(Helvetica_Neue_Regular.otf);
+}
+
+
+
 body {
   background-color: #1e1e1e;
   color: #dcdcdc; /* Set text color to white for better visibility */
+  font-family: myfont; !important;
 }
 
 
