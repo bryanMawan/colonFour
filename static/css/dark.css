@@ -12,16 +12,51 @@ body {
 /* Style for the search box and button */
 .search-box {
   background-color: #1e1e1e;
-  color: #dcdcdc;
+  color: #1e1e1e;
+  border-radius: 0; /* Remove rounded borders */
+
 }
 
-.search-button {
+/* Prevent white background on typing */
+.search-box input[type="text"] {
+  background-color: #1e1e1e; /* Set the background color explicitly */
+  color: #dcdcdc; /* Set the text color explicitly */
+}
+
+.search-button:focus,
+.search-button:active,
+.search-button{
   background-color: #1e1e1e;
   border: 1px solid #dcdcdc; /* Add border style */
-  transition: background-color 0.3s, border-color 0.3s; /* Add transition for smooth hover effect */
+  transition: background-color 0.7s, border-color 0.7s; /* Add transition for smooth hover effect */
+  border-radius: 0; /* Remove rounded borders */
+
 }
 
 .search-button:hover {
-  background-color: #0e0e0e;
+  background-color: #dcdcdc;
   border: 1px solid #dcdcdc; /* Change border color on hover */
+  color: #1e1e1e;
+  border-radius: 0; /* Remove rounded borders */
+
 }
+
+.btn-outline-primary,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  color: #dcdcdc;
+  border-radius: 0; /* Remove rounded borders */
+  border-color: #dcdcdc; /* Remove rounded borders */
+  box-shadow: none; /* Remove box-shadow on focus/active */
+}
+
+.btn-outline-primary:active {
+  color: #dcdcdc; /* Keep the same color for active state */
+}
+
+.btn-outline-primary:hover {
+  background-color: #dcdcdc;
+  color: #1e1e1e;
+  border-color: #dcdcdc; /* Remove rounded borders */
+}
+
