@@ -22,6 +22,11 @@ body {
   background-color: #1e1e1e; /* Set the background color explicitly */
   color: #dcdcdc; /* Set the text color explicitly */
 }
+.form-control, .input-group-text {
+  background-color: #1e1e1e; /* Set the background color explicitly */
+  color: #dcdcdc; /* Set the text color explicitly */
+  border-radius: 0; /* Remove rounded borders */
+}
 
 .search-button:focus,
 .search-button:active,
@@ -58,5 +63,37 @@ body {
   background-color: #dcdcdc;
   color: #1e1e1e;
   border-color: #dcdcdc; /* Remove rounded borders */
+}
+
+/* Apply styles to modal content */
+.modal-content {
+  background-color: #1e1e1e; /* Change background color */
+  color: #fff; /* Change text color */
+  border: 1px solid #dcdcdc; /* Add border around the modal content */
+  border-radius: 0; /* Remove rounded borders */
+
+
+}
+
+/* Adjust modal title */
+.modal-title {
+  color: #dcdcdc; /* Change title color */
+}
+
+/* Style the close button */
+.close {
+  color: #fff; /* Change close button color */
+}
+
+/* Customize modal header and footer */
+.modal-header, .modal-footer {
+  background-color: #1e1e1e; /* Change background color */
+  border-color: #dcdcdc; /* Change border color */
+}
+
+/* Style links within modals */
+.modal-body a {
+  color: #dcdcdc; /* Change link color */
+  text-decoration: underline; /* Add underline to links */
 }
 
