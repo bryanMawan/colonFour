@@ -10,7 +10,6 @@ function showModal(modalId) {
     });
     }
 
-    showModal('signupModal');
     showModal('loginModal'); 
 
 // Get all alert elements
@@ -26,3 +25,9 @@ alerts.forEach(alert => {
         }, 500); // Delay the removal to allow the fade-out animation to complete
     });
 });
+
+$(document).on("click",".new_user",function(){
+    $('#loginModal').modal('hide');
+    $('#signupModal').modal('show');
+  });
+

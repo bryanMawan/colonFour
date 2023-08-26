@@ -17,3 +17,7 @@ python manage.py createsuperuser
 python manage.py shell_plus
 python manage.py check
 python manage.py help
+
+cd /Users/bryanmawan/Documents/SabinaGrejer
+cd /Users/bryanmawan/Documents/FourColon/colonFour
+source klister/bin/activate
