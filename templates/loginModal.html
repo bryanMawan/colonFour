@@ -44,10 +44,25 @@
                     <div role="tabpanel" class="tab-pane" id="signup">
                         <form method="post" action="{% url 'register' %}">
                             {% csrf_token %}
-                            {{ form.as_p }}
-                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">USERNAME</span>
+                                <input type="text" name="{{ form.username.name }}" class="form-control" id="{{ form.username.id_for_label }}" required>
+                                <div class="invalid-feedback">{{ form.username.errors|first }}</div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">PASSWORD</span>
+                                <input type="password" name="{{ form.password1.name }}" class="form-control" id="{{ form.password1.id_for_label }}" required>
+                                <div class="invalid-feedback">{{ form.password1.errors|first }}</div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">CONFIRM PASSWORD</span>
+                                <input type="password" name="{{ form.password2.name }}" class="form-control" id="{{ form.password2.id_for_label }}" required>
+                                <div class="invalid-feedback">{{ form.password2.errors|first }}</div>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary">SIGN UP</button>
                         </form>
                         <p>Already have an account? <a data-bs-target="#loginModal" data-bs-toggle="modal" data-bs-dismiss="modal">Login</a></p>
+                    </div>
                     </div>
                 </div>
             </div>

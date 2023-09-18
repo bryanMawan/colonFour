@@ -60,7 +60,8 @@ body {
 }
 
 .nav-tabs, .nav-link {
-    color: #dcdcdc; /* Text color */
+    color: #dcdcdc;
+    border-radius: 0; /* Text color */
 }
 
 .nav-tabs, .nav-link:hover {
